@@ -127,7 +127,8 @@ ul {
 }
 
 .header-contacts-link {
-	display: block;
+	display: flex;
+	align-items: center;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -136,6 +137,17 @@ ul {
 	padding-top: 32px;
 	padding-bottom: 32px
 }
+
+.header-contacts-link-mail::before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	background-image: url("../img/sprite.svg#icon-mail");
+	fill: tomato;
+}
+
 
 .header-nav-link:hover,
 .header-nav-link:focus,
@@ -288,6 +300,19 @@ ul {
 
 .features-item:not(:last-child) {
 	margin-right: 30px;
+}
+
+.features-box-icon {
+	display: block;
+	background-color: #F5F4FA;
+	border-radius: 4px;	
+
+	padding: 25px 100px;
+	margin-bottom: 25px;
+}
+
+.features-icon {
+	display: block;	
 }
 
 .features-title {
