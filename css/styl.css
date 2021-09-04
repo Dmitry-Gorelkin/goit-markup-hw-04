@@ -138,17 +138,6 @@ ul {
 	padding-bottom: 32px
 }
 
-.header-contacts-link-mail::before {
-	content: "";
-	display: block;
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-	background-image: url("../img/sprite.svg#icon-mail");
-	fill: tomato;
-}
-
-
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-contacts-link:hover,
@@ -424,7 +413,55 @@ ul {
 	color: var(--main-text-color);
 }
 
+/*********************CLIENTS*********************/
 
+.clients {
+
+}
+
+.clients-titl {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-title-sm-color);
+
+	margin-bottom: 50px;
+}
+
+.clients-list {
+	display: flex;
+}
+
+.clients-item {
+	display: block;
+	padding: 16px 32px;
+
+	border: 1px solid #AFB1BB;
+}
+
+.clients-item:not(:last-child) {
+	margin-right: 30px;
+
+}
+
+.clients-item:hover
+.clients-item:focus {
+	color: var(--main-accent-color);
+}
+
+
+.clients-icon {
+	display: block;
+
+	fill: #AFB1BB;
+}
+
+.clients-icon:hover
+.clients-icon:focus {
+	fill: var(--main-accent-color);
+}
 
 /*************************************************************/
 /*-------------------------PORTFOLIO-------------------------*/
