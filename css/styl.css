@@ -7,6 +7,7 @@
 	--header-text-color: #757575; /* цвет остального текста шапки */
 	--main-title-sm-color: #212121; /* цвет цвет заголовкоц низшего уровня */
 	--main-text-color: #757575; /* цвет текста */
+	--main-svg-cplor: #AFB1BB; /* цвет SVG картинок */
 }
 
 /*********************ГЛОБАЛЬНЫЕ СТИЛИ*********************/
@@ -138,6 +139,11 @@ ul {
 	padding-bottom: 32px
 }
 
+.header-contacts-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+
 .header-nav-link:hover,
 .header-nav-link:focus,
 .header-contacts-link:hover,
@@ -154,10 +160,14 @@ ul {
 	padding-bottom: 60px;
 }
 
-/*.footer .container {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}*/
+.footer-container {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-contacts {
+	margin-right: 70px;
+}
 
 .footer-logo {
 	font-family: Raleway;
@@ -214,7 +224,58 @@ ul {
 	color: var(--main-accent-color);
 }
 
+.footer-social {
 
+}
+
+.footer-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+	margin-bottom: 20px;
+}
+
+.footer-list-social {
+	display: flex
+}
+
+.footer-item-social {
+	width: 44px;
+	height: 44px;
+}
+
+.footer-item-social:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer-link-social {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+	fill: #FFFFFF;
+}
+
+.footer-link-social:hover,
+.footer-link-social:focus {
+	background-color: var(--main-accent-color);
+}
 
 /*********************************************************/
 /*-------------------------INDEX-------------------------*/
@@ -326,14 +387,8 @@ ul {
 /*********************ACTIVITY*********************/
 
 .activity {
-	/*background: #E5E5E5;*/
-
 	padding-bottom: 94px;
 }
-
-/*.activity .container {
-	padding-bottom: 94px;
-}*/
 
 .activity-title {
 	font-weight: bold;
@@ -380,17 +435,24 @@ ul {
 	display: flex;
 }
 
+.team-item {
+	background-color: #FFFFFF;
+
+	border-radius: 0px 0px 4px 4px;
+
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .team-item:not(:last-child) {
 	margin-right: 30px;
 }
 
 .team-img {
-	
+	display: block;
 }
 
 .team-img-caption {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 30px 32px;
 }
 
 .team-item-title {
@@ -411,7 +473,48 @@ ul {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
+
+	margin-bottom: 16px;
 }
+
+.team-list-social {
+	display: flex;
+}
+
+.team-item-social {
+	width: 44px;
+	height: 44px;
+}
+
+.team-item-social:not(:last-child) {
+	margin-right: 10px;
+}
+
+.team-link {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+
+	color: var(--main-svg-cplor);
+}
+
+.team-icon {
+	fill: currentColor;
+}
+
+.team-link:hover,
+.team-link:focus,
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+	fill: #FFFFFF;
+	background-color: var(--main-accent-color);
+}
+
 
 /*********************CLIENTS*********************/
 
@@ -436,32 +539,40 @@ ul {
 
 .clients-item {
 	display: block;
-	padding: 16px 32px;
-
-	border: 1px solid #AFB1BB;
+	width: 170px;
+	height: 92px;
 }
 
 .clients-item:not(:last-child) {
 	margin-right: 30px;
-
 }
 
-.clients-item:hover
-.clients-item:focus {
-	color: var(--main-accent-color);
-}
+.clients-link {
+	width: 100%;
+	height: 100%;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	color: var(--main-svg-cplor);
+	border: 1px solid var(--main-svg-cplor);
+	border-radius: 4px;
+}
 
 .clients-icon {
 	display: block;
 
-	fill: #AFB1BB;
+	fill: currentColor;
 }
 
-.clients-icon:hover
-.clients-icon:focus {
-	fill: var(--main-accent-color);
+.clients-link:hover,
+.clients-link:focus {
+	border-color: var(--main-accent-color);
+	color: var(--main-accent-color);
 }
+
+
 
 /*************************************************************/
 /*-------------------------PORTFOLIO-------------------------*/
