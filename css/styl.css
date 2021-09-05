@@ -361,11 +361,15 @@ ul {
 }
 
 .features-box-icon {
-	display: block;
+	width: 270px;
+	height: 120px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #F5F4FA;
 	border-radius: 4px;	
 
-	padding: 25px 100px;
 	margin-bottom: 25px;
 }
 
